@@ -5,10 +5,10 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link, useNavigate } from "react-router-dom";
 import logo from '../Assests/logo.png'
+import { host } from '../constants';
 
 
 export default function Register() {
-  const host = "https://chatroombe.herokuapp.com";
   const navigate = useNavigate();
   useEffect(() => {
     if(localStorage.getItem("chat-app-user")){

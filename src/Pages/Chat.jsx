@@ -8,11 +8,11 @@ import Contacts from '../Components/Contacts';
 import Welcome from '../Components/Welcome';
 import Chatcontainer from '../Components/Chatcontainer';
 import {io} from 'socket.io-client';
+import { host } from '../constants';
 
 
 export default function Chat() {
   const socket = useRef();
-  const host = "https://chatroombe.herokuapp.com";
   const [contacts, setcontacts] = useState([]);
   const [currentUser, setcurrentUser] = useState(undefined);
   const [currentChat, setcurrentChat] = useState(undefined);

@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import ChatInput from './ChatInput';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { host } from '../constants';
 
 export default function Chatcontainer({ currentChat, currentUser, socket }) {
-    const host = "https://chatroombe.herokuapp.com";
     const [messages, setmessages] = useState([]);
     const [arrivalMessage, setarrivalMessage] = useState(null);
     const scrollRef = useRef();

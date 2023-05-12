@@ -6,10 +6,10 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import { Buffer } from "buffer";
+import { host } from '../constants';
 
 
 export default function Setavatar() {
-  const host = "https://chatroombe.herokuapp.com";
   const navigate = useNavigate();
   const api = "https://api.multiavatar.com/SV6GdPaMpYzWCw";
   const [avatars, setavatars] = useState([]);
@@ -147,5 +147,4 @@ width:100vw;
   .submit-btn:hover{
     background-color: #4e0eff;
   }
-}
 `;

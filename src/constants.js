@@ -1,0 +1,1 @@
+export const host = "https://chat-app-ll19.onrender.com";
